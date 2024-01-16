@@ -9,7 +9,7 @@ permissions:
   contents: read
 jobs:
   test:
-    name: Integration Tests (Enterprise Runners)
+    name: Integration Tests (Github Runners)
     environment: INT
     runs-on: [ubuntu-latest]
     env:
