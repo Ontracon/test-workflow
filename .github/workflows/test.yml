@@ -1,0 +1,26 @@
+name: Integration Tests
+on:
+  workflow_dispatch:
+  # pull_request:
+  push:
+  #   branches:
+  #     - 'main'
+permissions:
+  contents: read
+jobs:
+  test:
+    name: Integration Tests (Enterprise Runners)
+    environment: INT
+    runs-on: [Linux]
+    env:
+      1envtest: "Test ENV Settings on Job"
+    steps:
+      - name: Test Install
+        uses: otc-code/action-tfe@first-release
+        with:
+          TF_DIR: '${{ github.workspace }}/test'
+          TF_ACTION: 'install'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PARAMETERS: 'all'
+        env:
+          FORCE_INSTALL: 'true'
