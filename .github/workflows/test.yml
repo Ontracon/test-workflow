@@ -15,10 +15,13 @@ jobs:
     env:
       1envtest: "Test ENV Settings on Job"
     steps:
-      - name: Test Install
+      - name: Test Install - terraform
         uses: otc-code/action-tfe@first-release
         with:
           TF_DIR: '${{ github.workspace }}/test'
           TF_ACTION: 'install'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PARAMETERS: 'all'
+        env:
+          TFE: 'terraform'
+          TERRAFORM_VERSION: 'v1.5.0'
+          FORCE_INSTALL: 'true'
