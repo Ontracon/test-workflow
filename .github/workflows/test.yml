@@ -23,5 +23,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         env:
           TFE: 'terraform'
-          TERRAFORM_VERSION: 'v1.5.0'
-          FORCE_INSTALL: 'true'
