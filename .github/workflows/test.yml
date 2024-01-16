@@ -11,7 +11,7 @@ jobs:
   test:
     name: Integration Tests (Enterprise Runners)
     environment: INT
-    runs-on: [Linux]
+    runs-on: [ubuntu-latest]
     env:
       1envtest: "Test ENV Settings on Job"
     steps:
