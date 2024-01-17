@@ -12,10 +12,8 @@ jobs:
     name: Integration Tests (Github Runners)
     environment: INT
     runs-on: [ubuntu-latest]
-    env:
-      1envtest: "Test ENV Settings on Job"
     steps:
-      - name: Test Install - terraform
+      - name: Test Install
         uses: otc-code/action-tfe@first-release
         with:
           TF_ACTION: 'install'
