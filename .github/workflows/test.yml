@@ -18,5 +18,3 @@ jobs:
         with:
           TF_ACTION: 'install'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PARAMETERS: 'tofu,terraform'
-          DEBUG: 'WARN'
