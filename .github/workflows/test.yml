@@ -21,3 +21,4 @@ jobs:
           TF_ACTION: 'install'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FORCE_INSTALL: 'true'
+          DEBUG: 'DEBUG'
