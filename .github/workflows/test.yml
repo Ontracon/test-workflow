@@ -18,7 +18,5 @@ jobs:
       - name: Test Install - terraform
         uses: otc-code/action-tfe@first-release
         with:
-          TF_DIR: '${{ github.workspace }}/test'
           TF_ACTION: 'install'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-'
