@@ -19,5 +19,5 @@ jobs:
           TF_ACTION: 'install'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FORCE_INSTALL: 'true'
-          PARAMETERS: 'terraform,tofu'
-          DEBUG: 'WARN'
+          PARAMETERS: 'tofu'
+          DEBUG: 'DEBUG'
