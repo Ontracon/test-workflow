@@ -21,4 +21,4 @@ jobs:
           FORCE_INSTALL: 'true'
           PARAMETERS: 'tofu'
           TOFU_VERSION: '1.6.0-alpha3'
-          DEBUG: 'DEBUG'
+          DEBUG: 'WARN'
