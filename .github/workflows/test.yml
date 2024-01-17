@@ -20,5 +20,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FORCE_INSTALL: 'true'
           PARAMETERS: 'tofu'
-          TOFU_VERSION: 'v1.6.0-alpha3'
+          TOFU_VERSION: '1.6.0-alpha3'
           DEBUG: 'DEBUG'
