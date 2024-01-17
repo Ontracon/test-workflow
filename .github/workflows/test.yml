@@ -21,6 +21,4 @@ jobs:
           TF_DIR: '${{ github.workspace }}/test'
           TF_ACTION: 'install'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        env:
-          TFE: 'terraform'
-          FORCE_INSTALL: 'true'
+'
