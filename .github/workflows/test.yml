@@ -19,4 +19,4 @@ jobs:
           TF_ACTION: 'install'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PARAMETERS: 'tofu'
-          # DEBUG: 'WARN'
+          DEBUG: 'WARN'
